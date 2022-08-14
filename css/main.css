@@ -238,6 +238,12 @@ html ::-webkit-scrollbar-thumb {
 
 @media (min-width: 1200px) {
   html {
+    font-size: 1vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
     font-size: 14.4px;
   }
 }
