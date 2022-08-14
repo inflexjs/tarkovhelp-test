@@ -436,7 +436,6 @@ textarea {
 
 .card__text {
   vertical-align: middle;
-  font-size: 1.5rem;
   line-height: 28px;
 }
 
@@ -574,6 +573,10 @@ textarea {
   margin-top: 2.16667rem;
 }
 
+.rules__template--fixed {
+  max-width: 50rem;
+}
+
 .rules__title {
   margin-bottom: 1.16667rem;
 }
@@ -602,9 +605,6 @@ textarea {
 }
 
 @media (min-width: 1200px) {
-  .rules__template:nth-of-type(1) {
-    max-width: 50rem;
-  }
   .rules__list {
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
