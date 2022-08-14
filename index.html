@@ -17,7 +17,7 @@
 				<span class="badge main__badge">Одиночные квалификации на турнир</span>
 				<h1 class="title title--view-primary title--size-l main__title">Турнир Tarkov.Help</h1>
 				<p class="main__description">Охота на новичков Одиночки</p>
-				<button class="button button--view-primary main__button">Записаться на турнир</button>
+				<button class="button button--view-primary button--modal-open main__button">Записаться на турнир</button>
 			</div>
 			<div class="main__image">
 				<img src="./assets/images/preview.png" alt="preview">
@@ -124,7 +124,17 @@
 							<span class="text text--view-secondary card__prize">3 000 ₽</span>
 						</li>
 					</ul>
-					<div class="rules__collapse"></div>
+					<div class="collapse rules__collapse">
+						<div class="collapse__head">
+							<p class="text text--view-fourth collapse__text">+ дополнительные секретные призы победителям</p>
+						</div>
+						<div class="collapse__wrapper">
+							<div class="collapse__content">
+								<p class="text text--view-primary">Открывает покупку TDI KRISS Vector Gen.2 .45 ACP на 2 ур. лояльности</p>
+								<p class="text text--view-secondary">Открывается для покупки после выполнения квеста</p>
+							</div>
+						</div>
+					</div>
 				</div>
 				<div class="rules__template">
 					<h3 class="title title--view-secondary title--size-s rules__title">Спонсоры турнира</h3>
@@ -147,12 +157,20 @@
 						<span class="text text--style-bold aside__text">Таможня</span>
 					</div>
 				</div>
-				<button class="button button--view-secondary aside__button">Записаться на турнир</button>
+				<button class="button button--view-secondary button--modal-open aside__button">Записаться на турнир</button>
 			</aside>
 		</div>
 	</section>
+	<div class="modal">
+		<div class="modal__overlay"></div>
+		<div class="modal__content">
+			<h3 class="title title--view-primary modal__title">Турнир Tarkov.Help</h3>
+			<p class="text text--view-secondary modal__text">Охота начинается</p>
+			<button class="button button--view-primary button--modal-close modal__close">Закрыть</button>
+		</div>
+	</div>
 
-	<script src="js/main.js"></script>
+	<script type="module" src="js/main.js"></script>
 </body>
 
 </html>

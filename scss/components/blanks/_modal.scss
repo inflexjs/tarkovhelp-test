@@ -1,0 +1,38 @@
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+
+	&__overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: $secondaryBackgroundColor;
+		z-index: -1;
+		opacity: 0.8;
+	}
+
+	&__content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		padding: toRem(20);
+		border-radius: $borderRadius;
+		background-color: $secondaryBackgroundColor;
+	}
+
+	&__title,
+	&__text {
+		margin-bottom: toRem(10);
+	}
+
+	&.is-active {
+		display: block;
+	}
+}

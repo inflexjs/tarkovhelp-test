@@ -25,6 +25,7 @@
 
 	&__image {
 		max-width: toRem(540);
+		pointer-events: none;
 		img {
 			height: 100%;
 			width: 100%;

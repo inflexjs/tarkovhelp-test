@@ -1,0 +1,25 @@
+.collapse {
+	overflow: hidden;
+	padding: toRem(14) toRem(20);
+	background-color: $secondaryBackgroundColor;
+	border-radius: $borderRadius;
+	&__head {
+		display: flex;
+    align-items: center;
+    justify-content: space-between;
+		user-select: none;
+		cursor: pointer;
+	}
+	&__content {
+    padding-top: 10px;
+		display: none;
+  }
+
+	&.is-active {
+		& .collapse {
+			&__content {
+				display: block;
+			}
+		}
+	}
+}
