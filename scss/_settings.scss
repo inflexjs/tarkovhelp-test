@@ -67,12 +67,12 @@ html {
 	}
 
 	@media (min-width: $desktop) {
-		font-size: 1vw;
-	}
-
-	@media (min-width: $maxRems) {
 		font-size: 14.4px;
 	}
+
+	// @media (min-width: $maxRems) {
+	// 	font-size: 14.4px;
+	// }
 }
 
 main,

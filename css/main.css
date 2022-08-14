@@ -200,7 +200,7 @@ body {
 
 @media (min-width: 1200px) {
   .container {
-    max-width: 95.83333rem;
+    max-width: 1150px;
     padding-left: 1.66667rem;
     padding-right: 1.66667rem;
   }
@@ -233,12 +233,6 @@ html ::-webkit-scrollbar-thumb {
 @media (min-width: 650px) {
   html {
     font-size: 12px;
-  }
-}
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 1vw;
   }
 }
 
