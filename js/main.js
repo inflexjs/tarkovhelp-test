@@ -33,7 +33,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		}
 	})
 	body.addEventListener('click', (e) => {
-		console.log({e});
 		if (e.target.className === 'modal__overlay') {
 			modal.active = false
 			body.style.overflow = 'auto'
