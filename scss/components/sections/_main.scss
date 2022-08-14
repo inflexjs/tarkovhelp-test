@@ -1,0 +1,47 @@
+.main {
+	padding-top: toRem(58);
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-end;
+	}
+
+	&__badge {
+		margin-bottom: toRem(37);
+	}
+
+	&__title {
+		margin-bottom: toRem(20);
+	}
+
+	&__description {
+		font-size: $textWhite;
+		font-size: toRem(36);
+		font-weight: 600;
+		margin-bottom: toRem(55);
+		max-width: toRem(390);
+	}
+
+	&__image {
+		max-width: toRem(540);
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+		}
+		@media (max-width: 1000px) {
+			display: none;
+		}
+	}
+
+	@media (min-width: $tablet) {
+		&__container {
+			gap: toRem(50);
+		}
+
+		&__title {
+			min-width: toRem(410);
+		}
+	}
+}

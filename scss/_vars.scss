@@ -1,11 +1,15 @@
 // Font
 $mainFontFamily: 'Inter';
+$mainFontSize: 16px;
 $fontFamily: $mainFontFamily, -apple-system, blinkmacsystemfont, 'Inter', 'Arial', sans-serif;
 
 // Colors
 $mainBackgroundColor: #222222;
+$primaryBackgroundColor: #00B285;
+$secondaryBackgroundColor: #363636;
 $mainTextColor: #C9C9C9;
-$textPrimary: #00B285;
+$textWhite: #FFFFFF;
+$textPrimary: $primaryBackgroundColor;
 $textSecondary: #FFC165;
 $textThird: #ABABAB;
 $textFourth: #CEC7A6;
@@ -24,9 +28,11 @@ $containerCollapse: 1840px;
 $maxRems: 1200px;
 
 // Other
-$containerMaxWidth: 1110px;
+$containerMaxWidth: toRem(1150);
 
 $containerPaddingMobile: 5%;
 $containerPaddingTablet: 6.769%;
 $containerPaddingTabletLate: 5.729%;
-$containerPaddingDesktop: 20px;
+$containerPaddingDesktop: toRem(20);
+
+$borderRadius: 3px;

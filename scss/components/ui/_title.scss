@@ -1,0 +1,22 @@
+.title {
+	font-weight: 600;
+	&--view {
+		&-primary {
+			color: $titlePrimary;
+		}
+		&-secondary {
+			color: $titleSecondary;
+		}
+	}
+	&--size {
+		&-s {
+			font-size: toRem(24);
+		}
+		&-m {
+			font-size: toRem(32);
+		}
+		&-l {
+			font-size: toRem(42);
+		}
+	}
+}

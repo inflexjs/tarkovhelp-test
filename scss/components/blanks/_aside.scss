@@ -1,0 +1,45 @@
+.aside {
+	&__card {
+		margin-bottom: toRem(24);
+	}
+	&__image {
+		position: relative;
+		border-radius: toRem(10);
+		margin-bottom: toRem(24);
+
+		img {
+			height: 100%;
+			width: 100%;
+			object-fit: contain;
+			border-radius: toRem(10);
+		}
+	}
+	&__wrapper {
+		position: absolute;
+		left: toRem(20);
+		bottom: toRem(20);
+		z-index: 1;
+	}
+	&__text,
+	&__title {
+		display: block;
+
+		@media (max-width: $maxTablet) {
+			font-size: toRem(50);
+			line-height: 120%;
+		}
+	}
+
+	&__button {
+		display: block;
+		margin: 0 auto;
+		margin-left: auto;
+	}
+
+	@media (min-width: $desktop) {
+		&__image {
+			max-height: toRem(194);
+			max-width: toRem(340);
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.rules {
+	padding-top: toRem(80);
+	padding-bottom: toRem(80);
+	&__container {
+		position: relative;
+	}
+	&__content {
+		@media (max-width: $maxTablet) {
+			margin-bottom: toRem(40);
+		}
+	}
+	&__template {
+		&+& {
+			margin-top: toRem(26);
+		}
+	}
+	&__title {
+		margin-bottom: toRem(14);
+		&--main {
+			margin-bottom: toRem(40);
+		}
+	}
+	&__information {
+		margin-top: toRem(12);
+	}
+	&__list {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, 1fr);
+		gap: toRem(30);
+	}
+
+	@media (min-width: $tablet) {
+		&__list {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	@media (min-width: $desktop) {
+		&__template {
+			&:nth-of-type(1) {
+			max-width: toRem(600);
+		}
+		}
+		&__list {
+			grid-template-columns: repeat(4, 1fr);
+		}
+		&__aside {
+			position: absolute;
+			top: 0;
+			right: toRem(20);
+		}
+	}
+}

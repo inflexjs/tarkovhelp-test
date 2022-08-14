@@ -1,0 +1,19 @@
+.button {
+	padding: toRem(8) toRem(32);
+	border-radius: $borderRadius;
+	font-size: toRem(16);
+	font-weight: 700;
+	line-height: 32px;
+	white-space: nowrap;
+	&--view {
+		&-primary {
+			color: $textWhite;
+			background-color: $primaryBackgroundColor;
+		}
+		&-secondary {
+			color: $textPrimary;
+			background-color: transparent;
+			border: 2px solid $primaryBackgroundColor;
+		}
+	}
+}

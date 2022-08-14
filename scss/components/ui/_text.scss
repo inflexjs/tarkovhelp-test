@@ -1,0 +1,33 @@
+.text {
+	line-height: 24px;
+	&--view {
+		&-primary {
+			color: $textPrimary;
+		}
+		&-secondary {
+			color: $textSecondary;
+		}
+		&-thirdy {
+			color: $textThird;
+		}
+		&-fourth {
+			color: $textFourth;
+		}
+	}
+	&--style {
+		&-italic {
+			font-style: italic;
+		}
+		&-bold {
+			font-weight: 700;
+		}
+	}
+	&--display {
+		&-inline {
+			display: inline-block;
+		}
+		&-block {
+			display: block;
+		}
+	}
+}

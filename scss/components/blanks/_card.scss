@@ -1,0 +1,31 @@
+.card {
+	padding: toRem(14) toRem(20);
+	background-color: $secondaryBackgroundColor;
+	border-radius: $borderRadius;
+
+	&__place,
+	&__prize {
+		display: block;
+	}
+
+	&__image {
+		display: inline-block;
+		border-radius: 50%;
+		width: toRem(58);
+		height: toRem(58);
+		vertical-align: middle;
+		margin-right: toRem(16);
+	}
+
+	&__text {
+		vertical-align: middle;
+		font-size: toRem(18);
+		line-height: 28px;
+		&--block {
+			display: block;
+		}
+		&--inline {
+			display: inline-block;
+		}
+	}
+}

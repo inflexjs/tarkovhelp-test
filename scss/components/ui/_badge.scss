@@ -1,0 +1,12 @@
+.badge {
+	display: inline-block;
+	padding: toRem(8) toRem(16);
+	background-color: $secondaryBackgroundColor;
+	color: $textSecondary;
+	border-radius: $borderRadius;
+	white-space: nowrap;
+
+	@media (max-width: $maxMobile) {
+		font-size: toRem(14);
+	}
+}
