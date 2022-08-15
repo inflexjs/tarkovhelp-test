@@ -175,6 +175,12 @@ body {
   min-width: 320px;
 }
 
+body.scroll-lock {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
 .container {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

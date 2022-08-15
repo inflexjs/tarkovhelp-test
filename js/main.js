@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			case 27:
 			case 13:
 				modal.active = false
-				body.style.overflow = 'auto'
+				body.classList.remove('scroll-lock')
 				modalElement.classList.remove('is-active')
 				break;
 		}
@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	body.addEventListener('click', (e) => {
 		if (e.target.className === 'modal__overlay') {
 			modal.active = false
-			body.style.overflow = 'auto'
+			body.classList.remove('scroll-lock')
 			modalElement.classList.remove('is-active')
 		}
 	})

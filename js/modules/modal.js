@@ -2,10 +2,10 @@ export function modalToggler(modal, element, modalElement, event) {
 	element.addEventListener('click',() => {
 		if (event === 'open') {
 			modal.active = true
-			document.body.style.overflow = 'hidden'
+			document.body.classList.add('scroll-lock')
 		} else {
 			modal.active = false
-			document.body.style.overflow = 'auto'
+			document.body.classList.remove('scroll-lock')
 		}
 		modal.active ? modalElement.classList.add('is-active') : modalElement.classList.remove('is-active')
 	})
